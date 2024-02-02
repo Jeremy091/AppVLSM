@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Calculadora VLSM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+</head>
+<body>
+    <h1>Calculadora VLSM</h1>
+    <form id="formularioVLSM">
+        <label for="direccionIP">Dirección IP:</label><br>
+        <input type="text" id="direccionIP" name="direccionIP"><br>
+        <label for="prefijoSubred">Prefijo de subred:</label><br>
+        <input type="text" id="prefijoSubred" name="prefijoSubred"><br>
+        <label for="numSubredes">Número de subredes:</label><br>
+        <input type="text" id="numSubredes" name="numSubredes"><br>
+        <div id="inputsSubred"></div>
+        <input type="submit" value="Calcular">
+    </form>
+    <table id="tablaResultados">
+        <tr>
+            <th>Nombre de Subred</th>
+            <th>Dirección IP de Subred</th>
+            <th>Máscara de Subred</th>
+            <th>Gateway</th>
+            <th>Dirección de Broadcast</th>
+            <th>Rango de Hosts Utilizables</th>
+            <th>Cantidad de Hosts encontrados</th>
+        </tr>
+    </table>
+
+    <script src="./scripts/calculadora.js"></script>
+</body>
+</html>
